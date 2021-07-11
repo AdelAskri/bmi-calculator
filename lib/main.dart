@@ -218,14 +218,16 @@ class _InputPageState extends State<InputPage> {
         ),
         GestureDetector(
           onTap: () {
-           BmiCalculator bmiCalc= BmiCalculator(height: height.toDouble(),weight: weight.toDouble());
-           print(height.toString());
-           print(bmiCalc.calculateBmi());
+            BmiCalculator bmiCalc = BmiCalculator(
+                height: height.toDouble(), weight: weight.toDouble());
+            print(height.toString());
+            print(bmiCalc.calculateBmi());
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) {
                   return ResultsPage(
+                    //TODO 3 send parameters needed
                     bmi: bmiCalc.calculateBmi(),
                     interpretation: bmiCalc.getInterpretation(),
                     result: bmiCalc.getResult(),
@@ -236,10 +238,7 @@ class _InputPageState extends State<InputPage> {
           },
           child: Container(
             child: Center(
-              child: Text(
-                'CALCULATE',
-                style: kBottomBar
-              ),
+              child: Text('CALCULATE', style: kBottomBar),
             ),
             color: Colors.pink[600],
             width: double.infinity,
