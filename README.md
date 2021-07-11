@@ -1,16 +1,13 @@
 # bmi_calculator
+The app only uses the formula of ( Weight/Height²), if you need to include other indexes such as gender or age you can add whatever data you need inside the bmi_calculator.dart file but you will have to take care of the constructor in the results_page.dart and the paramaters given in main.dart 
+(i made it quite simple with adding a TODO where you want to customize all these you should find it easy).
 
-A new Flutter project.
 
-## Getting Started
+# Input Page
+![image](https://user-images.githubusercontent.com/78964536/125208941-84ba4c80-e28d-11eb-9425-88f6ea76ebe0.png)
 
-This project is a starting point for a Flutter application.
+# Results Page
+![image](https://user-images.githubusercontent.com/78964536/125208964-a3204800-e28d-11eb-83ab-67d0edc32ea3.png)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
